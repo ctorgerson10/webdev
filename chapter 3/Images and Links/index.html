@@ -2,17 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>CJ Torgerson</title>
+
+    <!-- I know we haven't covered styles yet, but I hope it's okay I used them here -->
     <style>
         .container {
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
+        }
+
+        header {
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        footer {
+            margin-top: 100px;
+        }
+
+        h2 {
+            margin-top: 50px;
         }
 
         .flex-container {
             display: flex;
             flex-flow: row wrap;
             justify-content: left;
+            align-items: center;
         }
 
         .item-group {
@@ -26,57 +43,70 @@
 
 <!-- Header -->
 <header>
-    <img href="images/coffee_beans.jpg" alt="coffee beans">
+    <img src="images/coffee_beans_crop.jpeg" alt="coffee beans" height="152" width="2400">
 </header>
 
+<!-- container for the webpage content, excluding the header -->
 <div class="container">
+
 <!-- Navigation -->
 <nav class="flex-container">
-   <a href="index.html"><img src="images/logo.png" alt="code n coffee logo" height="50" width="50"></a>
+   <a href="index.html"><img src="images/logo.png" alt="code n coffee logo" height="150" width="150"></a>
     <p>
-      Home&nbsp;&#9475;&nbsp;
-      Shop&nbsp;&#9475;&nbsp;
-      Gift Cards&nbsp;&#9475;&nbsp;
-      Contact&nbsp;&#9475;&nbsp;
+      <a href="index.html">Home</a>&nbsp;&#9475;&nbsp;
+      <a href="shop.html">Shop</a>&nbsp;&#9475;&nbsp;
+      <a href="giftcards.html">Gift Cards</a>&nbsp;&#9475;&nbsp;
+      <a href="contact.html">Contact</a>
     </p>
 </nav>
 
-<!-- Content -->
+<!-- Main Content -->
 <main>
-    <h1>Shop</h1>
+    <h1>Our Roasts</h1>
     <div id="shop-items">
 
         <h2>Whole Bean Coffee</h2>
-        <div class="item-group">
-            <li>Light Roast</li>
-            <li>Medium Roast</li>
-            <li>Dark Roast</li>
-            <li>House Roast</li>
+        <div>
+            <ul class="item-group">
+                <li>Light Roast</li>
+                <li>Medium Roast</li>
+                <li>Dark Roast</li>
+                <li>House Roast</li>
+            </ul>
         </div>
 
         <h2>Ground Coffee</h2>
-        <div class="item-group">
-            <li>Light Roast</li>
-            <li>Medium Roast</li>
-            <li>Dark Roast</li>
-            <li>House Roast</li>
+        <div>
+            <ul class="item-group">
+                <li>Light Roast</li>
+                <li>Medium Roast</li>
+                <li>Dark Roast</li>
+                <li>House Roast</li>
+            </ul>
         </div>
 
         <h2>Espresso Roasts</h2>
-        <div class="item-group">
-            <li>Light Roast</li>
-            <li>Medium Roast</li>
-            <li>Dark Roast</li>
-            <li>House Roast</li>
+        <div>
+            <ul class="item-group">
+                <li>Light Roast</li>
+                <li>Medium Roast</li>
+                <li>Dark Roast</li>
+                <li>House Roast</li>
+            </ul>
         </div>
 
     </div>
 </main>
-</div>
 
 <!-- Footer -->
 <footer>
+    <hr>
+    <p>Made with ❤️ by CJ Torgerson</p>
+    <p><a href="mailto:ctorgerson10@gmail.com">ctorgerson10@gmail.com</a></p>
+    <p><a href="tel:+14356123510">(435) 612-3510</a></p>
 </footer>
+
+</div>
 
 </body>
 </html>
