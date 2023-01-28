@@ -9,27 +9,62 @@
             flex-flow: row wrap;
             justify-content: left;
         }
+
+        .item-group {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
     </style>
 </head>
 <body>
 
 <!-- Header -->
 <header>
-    <!-- I opted to put the logo image in the navigation and link it to the home page -->
+    <img href="images/coffee_beans.jpg" alt="coffee beans">
 </header>
 
 <!-- Navigation -->
 <nav class="flex-container">
-   <a href="index.html"><img src="images/logo.png" alt="code n coffee logo" height="500" width="500"></a>
+   <a href="index.html"><img src="images/logo.png" alt="code n coffee logo" height="50" width="50"></a>
     <p>
       Home&nbsp;&#9475;&nbsp;
       Shop&nbsp;&#9475;&nbsp;
+      Gift Cards&nbsp;&#9475;&nbsp;
       Contact&nbsp;&#9475;&nbsp;
     </p>
 </nav>
 
 <!-- Content -->
 <main>
+    <h1>Shop</h1>
+    <div id="shop-items">
+
+        <h2>Whole Bean Coffee</h2>
+        <div class="item-group">
+            <li>Light Roast</li>
+            <li>Medium Roast</li>
+            <li>Dark Roast</li>
+            <li>House Roast</li>
+        </div>
+
+        <h2>Ground Coffee</h2>
+        <div class="item-group">
+            <li>Light Roast</li>
+            <li>Medium Roast</li>
+            <li>Dark Roast</li>
+            <li>House Roast</li>
+        </div>
+
+        <h2>Espresso Roasts</h2>
+        <div class="item-group">
+            <li>Light Roast</li>
+            <li>Medium Roast</li>
+            <li>Dark Roast</li>
+            <li>House Roast</li>
+        </div>
+        
+    </div>
 </main>
 
 <!-- Footer -->
