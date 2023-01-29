@@ -1,0 +1,30 @@
+header {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+h2 {
+    margin-top: 50px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-items: center;
+}
+
+.item-group {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
