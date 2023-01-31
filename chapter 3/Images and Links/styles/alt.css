@@ -1,67 +1,83 @@
 body {
   font-family: Arial, sans-serif;
-  color: #333;
-  background-color: #f2f2f2;
   margin: 0;
   padding: 0;
+  background-color: #f2f2f2;
 }
 
 header {
   background-color: #333;
   color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 20px;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
 header h1 {
   margin: 0;
-  font-size: 24px;
 }
 
-header nav a {
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
   color: #fff;
   text-decoration: none;
-  margin-left: 20px;
-  font-size: 18px;
-  transition: all 0.2s ease-in-out;
-}
-
-header nav a:hover {
-  color: #a2a2a2;
+  padding: 10px 20px;
+  display: block;
 }
 
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column nowrap;
-  height: 100vh;
-}
-
-.projects {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+  padding: 20px;
 }
 
 section {
-  width: 80%;
-  padding: 40px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
   text-align: center;
 }
 
-section h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
+form label,
+form input,
+form textarea {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
-section p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 20px;
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #f2f2f2;
+  color: #333;
+  cursor: pointer;
 }
 
 .card {
@@ -72,7 +88,7 @@ section p {
   height: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
   margin: 20px;
   transition: all 0.2s ease-in-out;
@@ -86,6 +102,7 @@ section p {
 .card h3 {
   font-size: 24px;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .card p {
@@ -112,67 +129,7 @@ section p {
   color: #333;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
-
-form input, form textarea {
-  width: 80%;
-  padding: 10px;
-  margin-bottom: 20px;
-  font-size: 18px;
-  border-radius: 10px;
-  border: none;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-}
-
-form input[type="submit"] {
-  background-color: #333;
-  color: #fff;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 18px;
-  transition: all 0.2s ease-in-out;
-}
-
-form input[type="submit"]:hover {
-  background-color: #f2f2f2;
-  color: #333;
-  cursor: pointer;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  background-color: #333;
-  color: #fff;
-  font-size: 18px;
-}
-
-@media only screen and (max-width: 768px) {
-  header h1 {
-    font-size: 24px;
-  }
-  
-  header nav a {
-    font-size: 16px;
-  }
-  
-  section {
-    width: 90%;
-  }
-  
-  .card {
-    width: 250px;
-    height: 350px;
-  }
-  
-  form input, form textarea {
-    width: 90%;
-  }
+.projects {
+    display:flex;
+    flex-flow: row wrap;
 }
