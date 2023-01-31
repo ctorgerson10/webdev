@@ -1,82 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>CJ Torgerson</title>
-
-    <!-- styles -->
-    <link rel="stylesheet" href="styles/stylesheet.css">
-
-</head>
-<body>
-
-<!-- Header -->
-<header>
-    <img src="images/coffee_beans_crop.jpeg" alt="coffee beans" height="152" width="2400">
-</header>
-
-<!-- container for the webpage content, excluding the header -->
-<div class="container">
-
-<!-- Navigation -->
-<nav class="flex-container">
-   <a href="index.html"><img src="images/logo.png" alt="code n coffee logo" height="125" width="125"></a>
-    <p>
-      <a href="index.html">Home</a>&nbsp;&#9475;&nbsp;
-      <a href="shop.html">Shop</a>&nbsp;&#9475;&nbsp;
-      <a href="giftcards.html">Gift Cards</a>&nbsp;&#9475;&nbsp;
-      <a href="contact.html">Contact</a>
-    </p>
-</nav>
-
-<!-- Main Content -->
-<main>
-    <h1>Our Roasts</h1>
-    <div id="shop-items">
-
-        <h2>Whole Bean Coffee</h2>
-        <div>
-            <ul class="item-group">
-                <li>Light Roast</li>
-                <li>Medium Roast</li>
-                <li>Dark Roast</li>
-                <li>House Roast</li>
-            </ul>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/alt.css">
+    <title>Developer Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1>Developer Portfolio</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm a full-stack developer with a passion for creating elegant and efficient solutions to complex problems. I have experience in various programming languages and technologies, and I am always eager to learn and tackle new challenges. In my free time, I enjoy hiking and playing video games.</p>
+      </section>
+      <h2>Projects</h2>
+      <section class="projects">
+        <div class="card">
+          <h3>Project 1</h3>
+          <p>A brief description of the project, highlighting the technologies used and what it does.</p>
+          <a href="#">Learn More</a>
         </div>
-
-        <h2>Ground Coffee</h2>
-        <div>
-            <ul class="item-group">
-                <li>Light Roast</li>
-                <li>Medium Roast</li>
-                <li>Dark Roast</li>
-                <li>House Roast</li>
-            </ul>
+        <div class="card">
+          <h3>Project 2</h3>
+          <p>A brief description of the project, highlighting the technologies used and what it does.</p>
+          <a href="#">Learn More</a>
         </div>
-
-        <h2>Espresso Roasts</h2>
-        <div>
-            <ul class="item-group">
-                <li>Light Roast</li>
-                <li>Medium Roast</li>
-                <li>Dark Roast</li>
-                <li>House Roast</li>
-            </ul>
+        <div class="card">
+          <h3>Project 3</h3>
+          <p>A brief description of the project, highlighting the technologies used and what it does.</p>
+          <a href="#">Learn More</a>
         </div>
-
-    </div>
-</main>
-
-<!-- Footer -->
-<footer>
-    <hr>
-    <p>Made with ❤️ by CJ Torgerson</p>
-    <p><a href="mailto:ctorgerson10@gmail.com">ctorgerson10@gmail.com</a></p>
-    <p><a href="tel:+14356123510">(435) 612-3510</a></p>
-</footer>
-
-</div>
-
-</body>
+      </section>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <textarea placeholder="Message"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Developer Portfolio</p>
+    </footer>
+  </body>
 </html>
