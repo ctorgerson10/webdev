@@ -1,0 +1,152 @@
+/* font-family: 'Comic Neue', cursive; */
+
+:root {
+    --teal: #4ad99b;
+    --blue: #4a94d9;
+    background-color: #fafafa;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+nav li {
+    margin: 10px;
+    list-style: none;
+}
+
+nav li a {
+    font-size: 1.25em;
+    text-decoration: none;
+    color: var(--blue);
+}
+
+nav li a:hover {
+    color: var(--teal);
+}
+
+header h1 {
+    font-size: 5em;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.hero-section {
+    padding: 20px;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.hero-section img {
+    width: 40%;
+    border-radius: 20px;
+}
+.hero-section div {
+    padding-left: 30px;
+    width: 40%;
+}
+
+/* style rules for mobile */
+@media screen and (min-width: 481px) and (max-width: 768px){
+
+    nav li:first-child {
+        margin-left: 0;
+    }
+
+    nav {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        place-items: center;
+        position: -webkit-sticky;
+        position: sticky;
+    }
+
+    #logo {
+        height: 100px;
+        width: 100px;
+    }
+
+    .card-container {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+    }
+
+    .card {
+        padding: 0 10px;
+        width: 90%;
+        height: auto;
+        background-image: linear-gradient(var(--blue), var(--teal));
+        margin: 1em;
+    }
+
+    .card button {
+        border-radius: 30px;
+        background-color: white;
+
+    }
+
+    .hero-section {
+        width: 100%;
+        flex-flow: column nowrap;
+    }
+
+    .hero-section img {
+        width: 90%;
+    }
+
+    .hero-section p {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+}
+
+/* style rules for desktop */
+@media screen and (min-width: 768px) {
+
+    #logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .card-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .card {
+        padding: 0 10px;
+        width: 28%;
+        height: auto;
+        background-image: linear-gradient(var(--blue), var(--teal));
+        margin: 1em;
+    }
+}
+
+footer {
+    font-family: 'Comic Neue', cursive;
+    text-align: center;
+}
+
